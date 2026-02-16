@@ -1,7 +1,9 @@
-import hashlib
 import random
 import string
 import time
+import funcion_hash_simple as hash_utils  # Importa tus funciones de hash
+
+
 
 def buscar_colision(algoritmo='sha1', long_cad=10, max_intentos=1000000):
     # Busca colisiones de hash generando cadenas aleatorias
@@ -12,7 +14,8 @@ def buscar_colision(algoritmo='sha1', long_cad=10, max_intentos=1000000):
     while intentos < max_intentos:
         # Genera una cadena aleatoria de caracteres
         input1 = ''.join(random.choices(string.ascii_letters + string.digits, k=long_cad))
-        h = hashlib.new(algoritmo, input1.encode()).hexdigest()
+        # h = hash_utils.mi_hash_simple_hashlib(input1, algoritmo)  # Usa la función importada
+        h = hash_utils.mi_hash_simple(input1, algoritmo)  # Usa la función importada
         intentos += 1
         
         if h in hashes_vistos:
