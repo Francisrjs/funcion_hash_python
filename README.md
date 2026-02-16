@@ -264,6 +264,7 @@ python funcion_hash_preimagen.py
 2.	Las colisiones son teóricamente posibles, pero prácticamente imposibles con algoritmos seguros.
 3.	Utilice los algoritmos más antiguos (MD5, SHA1) tienen vulnerabilidades conocidas pero no encontré las colisiones pero si utilizamos los algoritmos modernos (SHA256, SHA3) son considerados seguros y es prácticamente difícil encontrar 
 4.	Comparaciones con las pruebas :
+
 ![Comparaciones](Imagenes/comparaciones.png)
 
 
