@@ -260,11 +260,12 @@ python funcion_hash_preimagen.py
 
 ## Conclusiones
 
-1. Las funciones hash son **fundamentales en criptografía** y se usan en contraseñas, blockchain, integridad de archivos, etc.
-2. Las colisiones son **teóricamente posibles pero prácticamente imposibles** con algoritmos seguros.
-3. Los algoritmos más antiguos (MD5, SHA1) tienen vulnerabilidades conocidas.
-4. Los algoritmos modernos (SHA256, SHA3) son considerados seguros.
-5. La implementación custom demuestra por qué los algoritmos criptográficos reales son complejos: un hash simple es vulnerable a colisiones.
+•	Las funciones hash son fundamentales en criptografía  ya que se usan en todos los ámbitos en contraseñas, criptomonedas, etc. 
+•	Las colisiones son teóricamente posibles, pero prácticamente imposibles con algoritmos seguros.
+•	Utilice los algoritmos más antiguos (MD5, SHA1) tienen vulnerabilidades conocidas pero no encontré las colisiones pero si utilizamos los algoritmos modernos (SHA256, SHA3) son considerados seguros y es prácticamente difícil encontrar 
+•	Comparaciones con las pruebas :
+![Diagrama de flujo del detector de colisiones](Imagenes/comparaciones.png)
+
 
 ## Archivos del proyecto
 
